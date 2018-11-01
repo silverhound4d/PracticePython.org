@@ -16,3 +16,5 @@ def max_of_three(x,y,z):
 		return y
 
 max_of_three(var1,var2,var3)
+
+#Hahahahhahaa
