@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Practice Python</title>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=0.8">
+	<meta name="author" content="Michele Pratusevich, michele.pratusevich@gmail.com">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="Practice%20Python_soubory/main.css">
+	<link rel="shortcut icon" type="image/png" href="https://www.practicepython.org/favicon.png">
+
+	
+<script charset="utf-8" src="Practice%20Python_soubory/button.js"></script></head>
+<body>
+
+
+<div class="header center">
+	<div class="logodiv">
+		<img class="logo" src="Practice%20Python_soubory/logo.png">
+	</div>
+	<div class="header-text">
+		<div>
+			<div class="header-left">
+				<h1>Practice Python</h1>
+			<!-- 	<span id="gratipay" class="alwaysright leftmargin"><script data-gratipay-username="mprat"
+			        data-gratipay-widget="button"
+			        src="//grtp.co/v1.js"></script></span> -->
+			</div>
+	        <div class="header-right">
+	        	<div>
+				    <a href="http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Fpracticepython.org%2Fatom.xml" target="blank"><img id="feedlyFollow" class="alwaysright leftmargin" src="http://s3.feedly.com/img/follows/feedly-follow-rectangle-volume-medium_2x.png" alt="follow us in feedly" width="71" height="25"></a>
+					<a href="http://practicepython.org/atom.xml" target="_blank"><img class="logo-small alwaysright" src="Practice%20Python_soubory/rss_img.png" alt="Atom feed XML"></a>
+				</div>
+				<div class="twitter-icon">
+					<iframe id="twitter-widget-0" scrolling="no" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 155px; height: 20px;" title="Twitter Follow Button" src="Practice%20Python_soubory/follow_button.htm" data-screen-name="practice_python" frameborder="0"></iframe><script async="" src="Practice%20Python_soubory/analytics.js"></script><script async="" src="Practice%20Python_soubory/widgets.js" charset="utf-8"></script>
+				</div>
+			</div>
+		</div>
+		<div>
+			<h2>Beginner Python exercises</h2>
+		</div>
+	</div>
+</div>
+<div class="header center">
+	<ul>
+		<li><a href="https://www.practicepython.org/">Home</a></li>
+		<li><a href="https://www.practicepython.org/why-practice-python">Why Practice Python?</a></li>
+		<li><a href="https://www.practicepython.org/chilis/">Why Chilis?</a></li>
+		<li><a href="https://www.practicepython.org/resources-for-learners/">Resources for learners</a></li>
+		<li><a href="https://www.practicepython.org/exercises/">Exercises</a></li>
+		<li><a href="https://www.practicepython.org/blog/">Blog</a></li>
+		<li><a href="https://www.practicepython.org/about/">About</a></li>
+	</ul>
+</div>
+
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44633314-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+<script>
+  var loadDeferredStyles = function() {
+    var addStylesNode = document.getElementById("deferred-styles");
+    var replacement = document.createElement("div");
+    replacement.innerHTML = addStylesNode.textContent;
+    document.body.appendChild(replacement)
+    addStylesNode.parentElement.removeChild(addStylesNode);
+  };
+  var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+      webkitRequestAnimationFrame || msRequestAnimationFrame;
+  if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+  else window.addEventListener('load', loadDeferredStyles);
+</script>
+
+<div class="boxframe center">	
+	
+
+	<p>Welcome to Practice Python! There are over 30 beginner Python 
+exercises just waiting to be solved. Each exercise comes with a small 
+discussion of a topic and a link to a solution. New exercise are posted 
+monthly, so check back often, or follow on <a href="http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Fpracticepython.org%2Fatom.xml" target="_blank">Feedly</a>, <a href="https://twitter.com/intent/follow/?screen_name=practice_python" target="_blank">Twitter</a>, or <a href="http://practicepython.org/atom.xml" target="_blank">your favorite RSS reader</a>. To get started right away, read <a href="https://www.practicepython.org/about/">more about Practice Python</a> or go straight to <a href="https://www.practicepython.org/exercise/2014/01/29/01-character-input.html">Exercise 1</a>!</p>
+
+<div class="latest">
+
+	<p><a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html">Latest exercise</a>: Exercise 36 on 02 April 2017</p>
+
+
+
+
+
+	<p><a href="https://www.practicepython.org/solution/2017/03/19/35-birthday-months-solutions.html">Latest solution</a>: Solution 35 on 19 March 2017</p>
+
+
+
+
+	<p><a href="https://www.practicepython.org/blog/2017/03/24/install-python.html">Latest blog post</a>: <i>Installing Python to Get Started</i> on 24 March 2017</p>
+
+
+
+</div>
+
+<div id="amazon-fullsize">
+<iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&amp;p=48&amp;l=ur1&amp;category=student_usa&amp;banner=0S7P6QRT4G5FFQ3HVX02&amp;f=ifr&amp;linkID=3c960d158e096433c271133cfe186fcf&amp;t=practicepytho-20&amp;tracking_id=practicepytho-20" scrolling="no" border="0" marginwidth="0" style="border: medium none; display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 728px 90px;" width="0" height="0" frameborder="0"></iframe>
+</div>
+
+<div id="amazon-mobile">
+<iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&amp;p=12&amp;l=ur1&amp;category=student_usa&amp;banner=17B8GJ987HMD147SCX82&amp;f=ifr&amp;linkID=179caa35ccdaaf3ee25515ff4acf0da7&amp;t=practicepytho-20&amp;tracking_id=practicepytho-20" scrolling="no" border="0" marginwidth="0" style="border: medium none; display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 300px 250px;" width="0" height="0" frameborder="0"></iframe>
+</div>
+
+<div class="left">
+<h2 class="midheader"> All Exercises</h2>
+<ul>
+  
+    <li>
+      1: <a href="https://www.practicepython.org/exercise/2014/01/29/01-character-input.html"> Character Input</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      2: <a href="https://www.practicepython.org/exercise/2014/02/05/02-odd-or-even.html"> Odd Or Even</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      3: <a href="https://www.practicepython.org/exercise/2014/02/15/03-list-less-than-ten.html"> List Less Than Ten</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      4: <a href="https://www.practicepython.org/exercise/2014/02/26/04-divisors.html"> Divisors</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      5: <a href="https://www.practicepython.org/exercise/2014/03/05/05-list-overlap.html"> List Overlap</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      6: <a href="https://www.practicepython.org/exercise/2014/03/12/06-string-lists.html"> String Lists</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      7: <a href="https://www.practicepython.org/exercise/2014/03/19/07-list-comprehensions.html"> List Comprehensions</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      8: <a href="https://www.practicepython.org/exercise/2014/03/26/08-rock-paper-scissors.html"> Rock Paper Scissors</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      9: <a href="https://www.practicepython.org/exercise/2014/04/02/09-guessing-game-one.html"> Guessing Game One</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      10: <a href="https://www.practicepython.org/exercise/2014/04/10/10-list-overlap-comprehensions.html"> List Overlap Comprehensions</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      11: <a href="https://www.practicepython.org/exercise/2014/04/16/11-check-primality-functions.html"> Check Primality Functions</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      12: <a href="https://www.practicepython.org/exercise/2014/04/25/12-list-ends.html"> List Ends</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      13: <a href="https://www.practicepython.org/exercise/2014/04/30/13-fibonacci.html"> Fibonacci</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      14: <a href="https://www.practicepython.org/exercise/2014/05/15/14-list-remove-duplicates.html"> List Remove Duplicates</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      15: <a href="https://www.practicepython.org/exercise/2014/05/21/15-reverse-word-order.html"> Reverse Word Order</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      16: <a href="https://www.practicepython.org/exercise/2014/05/28/16-password-generator.html"> Password Generator</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      17: <a href="https://www.practicepython.org/exercise/2014/06/06/17-decode-a-web-page.html"> Decode A Web Page</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      18: <a href="https://www.practicepython.org/exercise/2014/07/05/18-cows-and-bulls.html"> Cows And Bulls</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      19: <a href="https://www.practicepython.org/exercise/2014/07/14/19-decode-a-web-page-two.html"> Decode A Web Page Two</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      20: <a href="https://www.practicepython.org/exercise/2014/11/11/20-element-search.html"> Element Search</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      21: <a href="https://www.practicepython.org/exercise/2014/11/30/21-write-to-a-file.html"> Write To A File</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      22: <a href="https://www.practicepython.org/exercise/2014/12/06/22-read-from-file.html"> Read From File</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      23: <a href="https://www.practicepython.org/exercise/2014/12/14/23-file-overlap.html"> File Overlap</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      24: <a href="https://www.practicepython.org/exercise/2014/12/27/24-draw-a-game-board.html"> Draw A Game Board</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      25: <a href="https://www.practicepython.org/exercise/2015/11/01/25-guessing-game-two.html"> Guessing Game Two</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      26: <a href="https://www.practicepython.org/exercise/2015/11/16/26-check-tic-tac-toe.html"> Check Tic Tac Toe</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      27: <a href="https://www.practicepython.org/exercise/2015/11/26/27-tic-tac-toe-draw.html"> Tic Tac Toe Draw</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      28: <a href="https://www.practicepython.org/exercise/2016/03/27/28-max-of-three.html"> Max Of Three</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      29: <a href="https://www.practicepython.org/exercise/2016/08/03/29-tic-tac-toe-game.html"> Tic Tac Toe Game</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      30: <a href="https://www.practicepython.org/exercise/2016/09/24/30-pick-word.html"> Pick Word</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      31: <a href="https://www.practicepython.org/exercise/2017/01/02/31-guess-letters.html"> Guess Letters</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      32: <a href="https://www.practicepython.org/exercise/2017/01/10/32-hangman.html"> Hangman</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      33: <a href="https://www.practicepython.org/exercise/2017/01/24/33-birthday-dictionaries.html"> Birthday Dictionaries</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      34: <a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html"> Birthday Json</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      35: <a href="https://www.practicepython.org/exercise/2017/02/28/35-birthday-months.html"> Birthday Months</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+    <li>
+      36: <a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html"> Birthday Plots</a>
+      
+        <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> <img class="chili" src="Practice%20Python_soubory/chili-liz-20x20.png"> 
+      
+    </li>
+  
+</ul>
+</div>
+
+<div class="right">
+<h2 class="midheader"> All Solutions</h2>
+<ul>
+  
+  
+  
+    
+    
+      <li>1: <a href="https://www.practicepython.org/solution/2014/02/05/01-character-input-solutions.html"> Character Input Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>2: <a href="https://www.practicepython.org/solution/2014/02/15/02-odd-or-even-solutions.html"> Odd Or Even Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>3: <a href="https://www.practicepython.org/solution/2014/02/26/03-list-less-than-ten-solutions.html"> List Less Than Ten Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>4: <a href="https://www.practicepython.org/solution/2014/03/05/04-divisors-solutions.html"> Divisors Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>5: <a href="https://www.practicepython.org/solution/2014/03/19/05-list-overlap-solutions.html"> List Overlap Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>6: <a href="https://www.practicepython.org/solution/2014/03/19/06-string-lists-solutions.html"> String Lists Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>7: <a href="https://www.practicepython.org/solution/2014/03/26/07-list-comprehensions-solutions.html"> List Comprehensions Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>8: <a href="https://www.practicepython.org/solution/2014/04/02/08-rock-paper-scissors-solutions.html"> Rock Paper Scissors Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>9: <a href="https://www.practicepython.org/solution/2014/04/10/09-guessing-game-one-solutions.html"> Guessing Game One Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>10: <a href="https://www.practicepython.org/solution/2014/04/16/10-list-overlap-comprehensions-solutions.html"> List Overlap Comprehensions Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>11: <a href="https://www.practicepython.org/solution/2014/04/16/11-check-primality-functions-solutions.html"> Check Primality Functions Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>12: <a href="https://www.practicepython.org/solution/2014/05/15/12-list-ends-solutions.html"> List Ends Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>13: <a href="https://www.practicepython.org/solution/2014/07/25/13-fibonacci-solutions.html"> Fibonacci Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>14: <a href="https://www.practicepython.org/solution/2014/05/21/14-list-remove-duplicates-solutions.html"> List Remove Duplicates Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>15: <a href="https://www.practicepython.org/solution/2014/05/28/15-reverse-word-order-solutions.html"> Reverse Word Order Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>16: <a href="https://www.practicepython.org/solution/2014/06/06/16-password-generator-solutions.html"> Password Generator Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>17: <a href="https://www.practicepython.org/solution/2014/07/10/17-decode-a-web-page-solutions.html"> Decode A Web Page Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>18: <a href="https://www.practicepython.org/solution/2014/07/18/18-cows-and-bulls-solutions.html"> Cows And Bulls Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>19: <a href="https://www.practicepython.org/solution/2014/10/01/19-decode-a-web-page-two-solutions.html"> Decode A Web Page Two Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>20: <a href="https://www.practicepython.org/solution/2014/11/30/20-element-search-solutions.html"> Element Search Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>21: <a href="https://www.practicepython.org/solution/2014/12/08/21-write-to-a-file-solutions.html"> Write To A File Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>22: <a href="https://www.practicepython.org/solution/2014/12/14/22-read-from-file-solutions.html"> Read From File Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>23: <a href="https://www.practicepython.org/solution/2014/12/25/23-file-overlap-solutions.html"> File Overlap Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>24: <a href="https://www.practicepython.org/solution/2015/11/01/24-draw-a-game-board-solutions.html"> Draw A Game Board Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>25: <a href="https://www.practicepython.org/solution/2015/11/08/25-guessing-game-two-solutions.html"> Guessing Game Two Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>26: <a href="https://www.practicepython.org/solution/2015/11/23/26-check-tic-tac-toe-solutions.html"> Check Tic Tac Toe Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>27: <a href="https://www.practicepython.org/solution/2016/03/17/27-tic-tac-toe-draw-solutions.html"> Tic Tac Toe Draw Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>28: <a href="https://www.practicepython.org/solution/2016/07/16/28-max-of-three-solutions.html"> Max Of Three Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>29: <a href="https://www.practicepython.org/solution/2016/09/11/29-tic-tac-toe-game-solutions.html"> Tic Tac Toe Game Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>30: <a href="https://www.practicepython.org/solution/2016/10/15/30-pick-word-solutions.html"> Pick Word Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>31: <a href="https://www.practicepython.org/solution/2017/01/08/31-guess-letters-solutions.html"> Guess Letters Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>32: <a href="https://www.practicepython.org/solution/2017/01/18/32-hangman-solutions.html"> Hangman Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>33: <a href="https://www.practicepython.org/solution/2017/02/03/33-birthday-dictionaries-solutions.html"> Birthday Dictionaries Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>34: <a href="https://www.practicepython.org/solution/2017/02/25/34-birthday-json-solutions.html"> Birthday Json Solutions</a>
+</li>
+    
+  
+    
+    
+      <li>35: <a href="https://www.practicepython.org/solution/2017/03/19/35-birthday-months-solutions.html"> Birthday Months Solutions</a>
+</li>
+    
+  
+    
+    
+        <li>36: Coming soon!</li>
+    
+  
+</ul>
+</div>
+
+</div>
+
+<div class="footer center">
+
+	<div id="udemy-fullsize">
+	<a target="new" href="http://click.linksynergy.com/fs-bin/click?id=xcNOXHETw7Y&amp;offerid=323058.927&amp;subid=0&amp;type=4"><img alt="April1816-30off-programwide728X90" src="http://ad.linksynergy.com/fs-bin/show?id=xcNOXHETw7Y&amp;bids=323058.927&amp;subid=0&amp;type=4&amp;gridnum=16" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 0px 0px;" width="0" height="0" border="0"></a>
+</div>
+<div id="udemy-mobile">
+	<a target="new" href="http://click.linksynergy.com/fs-bin/click?id=xcNOXHETw7Y&amp;offerid=323058.184&amp;subid=0&amp;type=4"><img alt="Learn to Code!" src="http://ad.linksynergy.com/fs-bin/show?id=xcNOXHETw7Y&amp;bids=323058.184&amp;subid=0&amp;type=4&amp;gridnum=13" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 0px 0px;" width="0" height="0" border="0"></a>
+</div>
+
+
+<div><i>Copyright Michele Pratusevich, 2014-2017.</i></div>
+<div><a href="https://www.practicepython.org/disclosure.html"><i>Advertising disclosure</i></a></div>
+
+
+	<script async="" src="Practice%20Python_soubory/adsbygoogle.js"></script>
+<!-- responsive-practicepython -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6567168629713427" data-ad-slot="4170472597" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+
+
+
+
+<div>
+	<link rel="stylesheet" type="text/css" href="Practice%20Python_soubory/syntax.css">
+</div><iframe scrolling="no" allowtransparency="true" src="Practice%20Python_soubory/widget_iframe.htm" title="Twitter settings iframe" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox" scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe></body></html>
